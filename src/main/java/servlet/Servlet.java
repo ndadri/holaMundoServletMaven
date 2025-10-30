@@ -14,10 +14,12 @@ import java.io.PrintWriter;
 
 @WebServlet("/holaServlet")
 public class Servlet extends HttpServlet {
+
     //Usamos los metodos predefinidos para que se nos haga mas corto la implementacion, y para que nos aseguremos
     //que esta implementado de manera correcta
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
 
         //tipo de documento/archivo que me va a devolver el servlet
         resp.setContentType("text/html");

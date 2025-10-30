@@ -5,11 +5,26 @@
     <title>Hola Mundo</title>
 </head>
 <body>
-<h1>
-    Hola Mundo
-</h1>
+
 <a href="/holaMundo/holaServlet?saludo=hola&nombre=Adri_David&id=1234">Saludar desde Servlet</a>
 <br>
 <a href="/holaMundo/parametros?id=1235">Hola mundo desde getParametros</a>
+<br>
+<h1>Registro de Cliente</h1>
+<form action="/holamundo/formulario" method="post">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+    <label for="apellido">Apellido:</label><br>
+    <input type="text" id="apellido" name="apellido" required><br><br>
+    <label for="direccion">Direccion:</label><br>
+    <input type="text" id="direccion" name="direccion" required><br><br>
+    <label for="cedula">Cedula:</label><br>
+    <input type="int" id="cedula" name="cedula" required><br><br>
+    <label for="fechaNacimiento">Fecha de nacimiento:</label><br>
+    <input type="int" id="fechaNacimiento" name="fechaNacimiento" required><br><br>
+
+    <input type="submit" value="Calcular Edad">
+
+</form>
 </body>
 </html>
